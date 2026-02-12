@@ -9,12 +9,13 @@ header {
     width: 100%;
     height: 200px;
     background-color: #ffffff;
+    box-shadow: 0 5px 5px rgba(39, 37, 37, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     padding: 15px;
-    position: relative;
+    position: fixed;
 }
 
 .logo {
@@ -25,12 +26,99 @@ header {
     left: 20px;
 }
 
-nav a {
+
+.nav-links a {
     color: black;
     margin: 0 10px;
     align-items: center;
     text-decoration: none;
+    display: inline-block;
+    transition: all 0.1s ease;
 }
+
+.nav-links a:hover {
+    color: #20048d;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+    justify-content: space-between;
+    
+}
+
+.nav-toggle span {
+    width: 100%;
+    height: 3px;
+    background-color: #464343;
+    transition: all 0.3s ease;
+    
+}
+
+@media (max-width: 375px)  {
+    header {
+        height: 110px;
+    }
+    .logo {
+        width: 220px;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        }
+    
+    .navbar {
+        background-color: #ffffff;
+        width: 2rem;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none ;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #20048d;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+        transform:rotate(45deg) translate(5px, 5px)
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+        .nav-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+}
+
 
 section {
     padding: 40px;
