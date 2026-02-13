@@ -1,25 +1,25 @@
-* {
+body {
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
-
 
 header {
     width: 100%;
-    height: 200px;
+    height: 140px;
     background-color: #ffffff;
-    box-shadow: 0 8px 8px rgba(39, 37, 37, 0.1);
+    box-shadow: 0 50px 50px rgba(23, 22, 22, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     padding: 15px;
+    top: 0;
     position: fixed;
+    z-index: 1000;
 }
 
 .logo {
-    width: 350px;
+    width: 340px;
     height: auto;
     position: absolute;
     top: 0px;
@@ -42,25 +42,44 @@ header {
     transform: scale(1.2);
 }
 
-.nav-toggle {
-    display: none;
+main {
+    padding-top: 160px;
+    display: flex;
     flex-direction: column;
-    cursor: pointer;
-    width: 25px;
-    height: 20px;
-    justify-content: space-between;
-    
+    align-items: flex-start;
 }
 
-.nav-toggle span {
+.hero {
+    background: url('assets/images/fotoauge-bachalpsee-4336340_1280.jpg') no-repeat center center/cover;
+    color: rgb(255, 255, 255);
+    padding: 100px 20px;
+    text-align: center;
     width: 100%;
-    height: 3px;
-    background-color: #464343;
-    transition: all 0.3s ease;
-    
 }
 
-@media (max-width: 475px)  {
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+.intro {
+    background: rgba(43, 143, 70, 0.341);
+    margin: 0px 180px;
+    padding: 1em;
+    backdrop-filter: blur(5px) saturate(150%);
+    border-radius: 20px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #20048d;
+    width: 90%;
+    margin: 50px auto;
+}
+
+
+@media (max-width: 720px)  {
     header {
         height: 110px;
     }
@@ -82,13 +101,27 @@ header {
 
     .nav-toggle {
         display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        width: 25px;
+        height: 20px;
+        justify-content: space-between;
     }
+    .nav-toggle span {
+        width: 100%;
+        height: 3px;
+        background-color: #464343;
+        transition: all 0.3s ease;;
+        }
 
     .nav-links {
         display: none ;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
         margin-top: 1rem;
+        position: absolute;
+        top: 10px;
+        right: 200px;
     }
 
     .nav-links.active {
@@ -96,14 +129,10 @@ header {
     }
 
     .nav-links a {
-        margin: 10px 0;
-        padding: 10px;
+        margin: 5px 0;
+        padding: 5px;
         text-align: center;
         border-bottom: 1px solid #20048d;
-    }
-
-    .nav-links a:last-child {
-        border-bottom: none;
     }
 
     .nav-toggle.active span:nth-child(1) {
@@ -114,10 +143,19 @@ header {
         opacity: 0;
     }
 
-        .nav-toggle.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -6px);
-        }
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    main {
+        padding-top: 100px;
+    }
+
+    .intro {
+        margin: 0px 20px;
+    }
 }
+
 
 
 section {
