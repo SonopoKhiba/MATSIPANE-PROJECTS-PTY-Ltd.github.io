@@ -50,7 +50,7 @@ main {
 }
 
 .hero {
-    background: url('assets/images/pexels-arturoaez225-13637878.jpg') no-repeat center center/cover;
+    background: url('assets/images/fotoauge-bachalpsee-4336340_1280.jpg') no-repeat center center/cover;
     color: rgb(255, 255, 255);
     padding: 100px 20px;
     text-align: center;
@@ -72,14 +72,44 @@ h1 {
 
 .service-highlights {
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    justify-content: space-between;
+    align-items: center;
     text-align: left;
+    gap: 40px;
 }
 
-li {
-    margin-bottom: 10px;
+.text-content {
+    flex: 1;
 }
+
+.imgae-content {
+    flex: 1;
+} 
+
+.text-content h2 {
+    margin-bottom: 40px;
+    text-decoration: underline;
+    position: relative;
+    left: 300px;
+}
+
+.text-content li {
+    margin-bottom: 25px;
+    position: relative;
+    left: 300px;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 1.0);
+    border-radius: 10px;
+    position: relative;
+    left: 300px;
+}
+
+
 
 hr {
     border: none;
@@ -89,7 +119,9 @@ hr {
     margin: 50px auto;
 }
 
-@media (max-width: 720px)  {
+
+
+@media (max-width: 845px)  {
     header {
         height: 110px;
     }
@@ -164,8 +196,32 @@ hr {
     .intro {
         margin: 0px 20px;
     }
+
+    .service-highlights {
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .text-content h2,
+    .text-content li {
+        left: 0;
+    }
+
+    .image-content img {
+        position: static;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        height: 400px;
+        box-shadow: 0 5px 12px rgba(0, 0, 0, 1.0);
+        border-radius: 10px;
+    }
 }
 
+@media (max-width: 485px) {
+
+}
 
 
 section {
