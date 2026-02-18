@@ -22,10 +22,10 @@
 
             <!-- Navigation Links -->
             <div class="nav-links" id="navLinks">
-                <a href="index.html" class="home">Home</a>
-                <a href="about_page/about.html" class="about">About</a>
-                <a href="services_page/services.html" class="services">Services</a>
-                <a href="contact_us/contact.html" class="contact">Contact</a>
+                <a href="#hero" class="home">Home</a>
+                <a href="#about" class="about">About</a>
+                <a href="#services" class="services">Services</a>
+                <a href="#contact" class="contact">Contact</a>
             </div>
             
         </nav>
@@ -33,7 +33,7 @@
 
     <main class="container">
     <!-- Home Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
         
         
         <h1>Professional Geoscience & Environmental Consulting Services</h1>
@@ -74,37 +74,49 @@
         </div>
     </section>
 
-    <button>Contact US</button>
-    <P>Contact us today to discuss your project requirements.</P>
+    <a href="#contact" class="contact-btn">Contact Us</a>
+    <P class="contact-text">Contact us today to discuss your project requirements.</P>
 
     <hr>
 
     <!-- About Us Section -->
 
-    <section id="about"> 
-        <h1>About Us</h1> 
-        <p>MATSIPANE PROJECTS(PTY)Ltd is a professional Geosciences and Environmental Consulting firm providing specialist services
-        across South Africa.
-        </p> 
+    <section id="about" class="about-section"> 
+        <div class="about-container">
 
-        <p>
-            Our work supports responsible development within the mining, construction, and agricultural sectors. We combine
-            scientific expertise, field investigations, and advanced modelling techniques to deliver reliable, data-driven
-            solutions.
-        </p>
+            <div class="about-text">
+                <h1>About Us</h1>
+
+                <p>MATSIPANE PROJECTS(PTY)Ltd is a professional Geosciences and Environmental Consulting firm providing specialist
+                    services
+                    across South Africa.
+                </p>
+                
+                <p>
+                    Our work supports responsible development within the mining, construction, and agricultural sectors. We combine
+                    scientific expertise, field investigations, and advanced modelling techniques to deliver reliable, data-driven
+                    solutions.
+                </p>
+                
+                <h3>We are committed to:</h3>
+                <ul>
+                    <li>Environmental sustainability</li>
+                    <li>Regulatory compliance</li>
+                    <li>Scientific accuracy</li>
+                    <li>Professional integrity</li>
+                    <li>Timely project delivery</li>
+                </ul>
+                <p>
+                    Our approach integrates technical knowledge with practical implementation, ensuring that each project meets
+                    environmental legislation requirements and industry best practices.
+                </p>
+            </div>
+
+            <div class="about-image">
+                <img src="assets/images/WhatsApp Image 2026-02-11 at 09.54.06 (2).jpeg" alt="Environmental field investigation">
+            </div>
+        </div>
         
-        <h3>We are committed to:</h3>
-        <ul>
-            <li>Environmental sustainability</li>
-            <li>Regulatory compliance</li>
-            <li>Scientific accuracy</li>
-            <li>Professional integrity</li>
-            <li>Timely project delivery</li>
-        </ul>
-        <p>
-            Our approach integrates technical knowledge with practical implementation, ensuring that each project meets
-            environmental legislation requirements and industry best practices.
-        </p>
     </section>
 
     <hr>
