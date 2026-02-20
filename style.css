@@ -53,6 +53,11 @@ main {
     flex-direction: column;
 }
 
+section {
+    padding: 40px;
+    text-align: center;
+}
+
 .hero {
     min-height: 80vh;
     background: url('assets/images/fotoauge-bachalpsee-4336340_1280.jpg') no-repeat center center/cover;
@@ -173,7 +178,7 @@ hr {
 }
 
 .about-text p {
-    padding: 0 100px;
+    padding: 0 50px;
     margin-bottom: 20px;
     line-height: 1.6;
     color: #444;
@@ -181,7 +186,6 @@ hr {
 
 .about-text ul {
     margin-bottom: 20px;
-    padding: 0px 620px 0px 620px;
 }
 
 .about-text li {
@@ -305,33 +309,28 @@ hr {
 
     .about-container {
         flex-direction: column;
+        gap: 30px;
         text-align: center;
+    }
+
+    .about-section {
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-text p {
+        padding: 0 20px;
     }
     
     .about-text ul {
         margin-bottom: 20px;
-        padding: 0px 150px 0px 150px;
+        padding: 0 ;
     }
-}
 
-section {
-    padding: 40px;
-    text-align: center;
-}
+    .about-text li {
+        list-style-position: inside;
+    } 
 
-#services .service {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px auto;
-    max-width: 300px;
-}
-
-button {
-    padding: 10px 20px;
-    background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
 }
 
 footer {
