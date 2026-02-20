@@ -282,9 +282,21 @@ hr {
         text-align: center;
     }
 
-    /* .text-content, .image-content {
-        padding-left: 0;
-    } */
+    .text-content, 
+    .image-content {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+
+    .text-content h2,
+    .text-content ul {
+        padding-left: 0px;
+        text-align: center;
+    }   
+
+    .text-content li {
+        list-style-position: inside;
+    }
 
     .image-content img {
         position: static;
