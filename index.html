@@ -258,17 +258,22 @@
                 hydrological and geohydrological consulting services.
             </p>
             
-            <form action="https://formsubmit.co/sonopokhiba30@gmail.com" class="contact-form" method="post">
-                <!-- Prevent spam-->
+            <form action="https://formsubmit.co/sonopokhiba30@gmail.com" class="contact-form" method="POST">
+            
+                <!-- Prevent spam -->
                 <input type="hidden" name="_captcha" value="false">
-                <!-- Redirect after submit -->
-                <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
-
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
+            
+                <!-- Redirect after submit (remove if you don't have this page yet) -->
+                <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html"> -->
+            
+                <input type="text" name="name" placeholder="Your Name" required>
+            
+                <input type="email" name="email" placeholder="Your Email" required>
+            
                 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                
+            
                 <button type="submit">Send Message</button>
+            
             </form>
         </div>
     </section>
