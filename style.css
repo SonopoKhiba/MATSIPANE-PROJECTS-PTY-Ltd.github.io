@@ -186,10 +186,12 @@ hr {
 
 .about-text ul {
     margin-bottom: 20px;
+    
 }
 
 .about-text li {
     margin-bottom: 10px;
+    
 }
 
 .about-image {
@@ -202,6 +204,176 @@ hr {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 1.0);
+}
+
+.services-table {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.hydro-services,
+.geo-services {
+    flex: 1;
+}
+
+#services {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#services h1 {
+    margin-bottom: 20px;
+    color: #20048d;
+}
+
+#services p {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+}
+
+.hydro-services,
+.geo-services {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.hydro-services h2,
+.geo-services h2{
+    text-decoration: underline;
+}
+
+.service-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.service-row {
+    margin-bottom: 25px;
+}
+
+.service-title,
+.geo-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #20048d;
+}
+
+.service-desc,
+.geo-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+#contact {
+    background-color: #f4f6f9;
+    padding: 60px 20px;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #20048d;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    margin-bottom: 40px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #20048d;
+    box-shadow: 0 0 0 3px rgba(32, 4, 141, 0.1);
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #20048d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.contact-form button:hover {
+    background-color: #160364;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #272727;
+    color: #f5f5f5;
+    padding: 50px 20px 20px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1 1 250px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #aaa;
 }
 
 @media (max-width: 845px)  {
@@ -331,10 +503,18 @@ hr {
         list-style-position: inside;
     } 
 
-}
+    .services-table {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .hydro-services,
+    .geo-services {
+        width: 100%;
+    }
 
-footer {
-    background: #f4f4f4;
-    text-align: center;
-    padding: 15px;
+        .footer-container {
+            text-align: center;
+        }
+
 }
